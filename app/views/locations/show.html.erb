@@ -1,0 +1,8 @@
+<p>Address: <%= @location.address %></p>
+<p>Coordinates: <%= @location.lat %> <%= @location.long %></p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@location.lat},#{@location.long}&markers=#{@location.lat},#{@location.long}&zoom=7&size=640x400&key=AIzaSyB_sP8O1gUuc9MmLHe4rJJovGPbtEgMXGI",
+              class: '', alt: "#{@location.address} on the map"%>
+
+<br>
+<%= link_to "Go Back", :back %>
