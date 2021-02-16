@@ -1,0 +1,9 @@
+<%= form_for @location do |f| %>
+
+  <fieldset>
+    <%= f.label :address, 'Address' %>
+    <%= f.text_field :address %>
+  </fieldset>
+
+  <%= f.submit 'Add Address'%>
+<% end %>
